@@ -1,0 +1,15 @@
+:root {
+  --cream: #f2e7cb;
+  --sage: #94b38a;
+  --muted-green: #93a29d;
+  --terracotta: #d56748;
+  --mustard: #efc757;
+  --text-dark: #1f1f1f;
+  --white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
