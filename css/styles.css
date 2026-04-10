@@ -165,3 +165,127 @@ a {
   cursor: pointer;
 }
 
+/* HERO */
+
+.hero-section {
+  background-color: var(--cream);
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.hero-title {
+  margin: 0 0 2.25rem;
+  text-align: center;
+  font-size: 2.9rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* stacking everything vertically first */
+.hero-section .page-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* I turned the hero content into a two-column grid without changing the HTML structure.
+   This lets the paragraph sit on the left while the image and button stay on the right. */
+.hero-text {
+  position: absolute;
+  left: 2rem;
+  top: 55%;
+  transform: translateY(150%);
+
+  max-width: 13rem;
+  font-size: 1.15rem;
+  line-height: 1.45;
+  text-align: left;
+}
+
+
+.hero-image {
+  width: 100%;
+  max-width: 38rem;
+  border-radius: 1.75rem;
+  margin: 0 0 1.25rem auto;
+}
+
+/* This moves the paragraph to the left side of the hero row. */
+.hero-text {
+  align-self: start;
+  width: 34%;
+}
+
+.hero-image {
+  width: 58%;
+}
+
+/* pulling image up so it lines up with text */
+.hero-image {
+  margin-top: -8.5rem;
+}
+
+/* aligning button under image */
+.button-wrap {
+  text-align: right;
+  width: 58%;
+  margin-left: auto;
+}
+
+/* special section button alignment */
+.specials-button-wrap {
+  width: 100%;
+  margin-left: 0;
+  text-align: right;
+  margin-top: 0.5rem;
+}
+
+/* this is my base button style used across the site */
+.primary-button {
+  position: relative;
+  display: inline-block;
+
+  padding: 0.55rem 1.5rem;
+  border-radius: 999px;
+
+  background-color: #e2a07c;
+  color: var(--text-dark);
+
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* i created a hidden layer that slides up on hover to give the button interaction */
+.book-button::before {
+  content: "Book A Table";
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #d58f69;
+  color: white;
+
+  border-radius: 999px;
+  transition: top 0.3s ease;
+}
+
+/* on hover, the layer slides up to create the effect */
+.book-button:hover::before {
+  top: 0;
+}
+
+.hero-text,
+.hero-image,
+.button-wrap {
+  position: relative;
+}
+
