@@ -441,3 +441,90 @@ a {
 .menu-button-style:hover::before {
   top: 0;
 }
+
+/* TESTIMONIALS  */
+
+.testimonials-section {
+  background-color: var(--white);
+}
+
+/* i styled each testimonial as a card to separate them clearly */
+.testimonial-card {
+  margin-bottom: 1rem;
+  padding: 1rem 1rem 1.25rem;
+  background-color: #dfe3d9;
+  border-radius: 1.5rem;
+}
+
+/* i used flexbox to align the image, name, and rating in one row */
+.testimonial-top {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.testimonial-image {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-name {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* i styled the rating as a pill to make it stand out */
+.rating-pill {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background-color: #f2e7cb;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.star {
+  color: #efc757;
+  font-size: 0.9rem;
+}
+
+.rating-number {
+  color: var(--text-dark);
+}
+
+.testimonial-text {
+  margin: 0;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.rating-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+
+  background-color: #f2e7cb;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* I used a gold color for the star so it visually stands out from the text */
+.star {
+  color: #efc757;
+  font-size: 0.9rem;
+}
+
+.rating-number {
+  color: var(--text-dark);
+}
