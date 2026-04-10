@@ -305,3 +305,40 @@ a {
   font-size: 1.7rem;
   font-weight: 700;
 }
+
+/* VALUES */
+
+.values-section {
+  background-color: var(--white);
+}
+
+/* I used very rounded cards for softer feel */
+.value-card {
+  margin-bottom: 1rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  background-color: #e3e8df;
+  border-radius: 999px;
+}
+
+.value-card:last-child {
+  margin-bottom: 0;
+}
+
+/* i centered and sized the icons to keep everything aligned */
+.value-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 0.75rem;
+}
+
+.value-heading {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.value-text {
+  margin: 0;
+  font-size: 0.85rem;
+}
