@@ -59,3 +59,22 @@ a {
 .skip-link:focus {
   top: 1rem;
 }
+
+/* HEADER */
+/* background for top section */
+.site-header {
+  background-color: var(--cream);
+}
+
+/* using flex to push logo left and menu button right */
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 1.5rem 0;
+}
+
+.logo-img {
+  width: 165px;
+  height: auto;
+}
