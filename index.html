@@ -258,3 +258,21 @@
   </div>
 </footer>
 
+<!-- javascript below controls opening and closing the mobile menu (i asked AI to give me this) -->
+ <script>
+  const menuButton = document.querySelector(".menu-button");
+  const mobileNav = document.querySelector(".mobile-nav-links");
+  const closeButton = document.querySelector(".close-menu");
+
+  menuButton.addEventListener("click", () => {
+    mobileNav.classList.add("show-menu");
+  });
+
+  closeButton.addEventListener("click", () => {
+    mobileNav.classList.remove("show-menu");
+  });
+</script>
+</body>
+</html>
+
+
