@@ -289,3 +289,19 @@ a {
   position: relative;
 }
 
+/* SHARED SECTIONS  */
+
+/* I applied consistent spacing to all sections to keep the layout balanced */
+.values-section,
+.specials-section,
+.testimonials-section {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.section-title {
+  margin: 0 0 1.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
