@@ -11,41 +11,55 @@
   <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="css/styles.css">
+  
 </head>
+
 <body>
+  <!-- I added schema markup here so search engines understand that this site is a restaurant.
+This helps with SEO and can improve how the site shows up in search results -->
+  <div itemscope itemtype="https://schema.org/Restaurant">
   <!-- this is mainly for accessibility, lets keyboard users skip straight to content -->
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
 
   <header class="site-header">
-    <!-- navigation bar -->
-    <nav class="site-nav" aria-label="Main navigation">
-      <!-- logo doubles as a home button so users can always get back -->
-      <a class="site-logo" href="index.html">
-        <img src="images/logo/logo.svg" alt="Plant Palette logo" class="logo-img">
-      </a>
-      <!-- hamburger menu (only really used on mobile) -->
-      <button class="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false">
-        <span class="menu-bar"></span>
-        <span class="menu-bar"></span>
-        <span class="menu-bar"></span>
-      </button>
-    </nav>
+  <nav class="site-nav" aria-label="Main navigation">
 
-    <!-- this is the full-screen overlay that appears when the menu opens -->
-   <div class="mobile-nav-links">
-    <!-- this is the actual white box inside the overlay -->
-  <div class="mobile-menu-box">
-    <!-- X button to close menu -->
-    <button class="close-menu" aria-label="Close menu">✕</button>
+    <!-- logo -->
+    <a class="site-logo" href="index.html" itemprop="name">
+      <img src="images/logo/logo.svg" alt="Plant Palette logo" class="logo-img">
+    </a>
 
-    <!-- nav links -->
-    <a class="mobile-nav-link active" href="index.html">Home</a>
-    <a class="mobile-nav-link" href="menu.html">Menu</a>
-    <a class="mobile-nav-link" href="contact.html">Contact Us</a>
+    <!-- hamburger (mobile only) -->
+     <!--I’m using spans to create the 3 lines (hamburger icon) with CSS -->
+    <button class="menu-button" type="button" aria-label="Open navigation menu">
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+    </button>
+
+    <!-- tablet nav -->
+    <div class="tablet-nav">
+      <a class="tablet-nav-link active" href="index.html">Home</a>
+      <a class="tablet-nav-link" href="menu.html">Menu</a>
+      <a class="tablet-nav-link" href="contact.html">Contact Us</a>
+    </div>
+
+  </nav>
+
+  <!-- mobile overlay menu -->
+   <!-- this is the mobile menu that appears when the hamburger is clicked.
+I kept it separate so I can show/hide it using JavaScript -->
+  <div class="mobile-nav-links">
+    <div class="mobile-menu-box">
+     <button class="close-menu" type="button" aria-label="Close navigation menu">✕</button>
+
+      <a class="mobile-nav-link active" href="index.html">Home</a>
+      <a class="mobile-nav-link" href="menu.html">Menu</a>
+      <a class="mobile-nav-link" href="contact.html">Contact Us</a>
+    </div>
   </div>
-</div>
-  </header>
+</header>
   
   <!-- main content of the page -->
   <main id="main-content">
@@ -53,19 +67,21 @@
     <!-- HERO -->
     <section class="hero-section">
       <div class="page-wrapper">
-        <h1 class="hero-title">Plant-Based Dining, Made With Care</h1>
+        <h1 class="hero-title" itemprop="description">Plant-Based Dining, Made With Care</h1>
 
-        <p class="hero-text">
+        <p class="hero-text" itemprop="servesCuisine">
           Seasonal vegan meals crafted with ethically sourced ingredients.
         </p>
 
+        <!-- instead of using a background image in CSS, I used an actual image tag so it's more accessible and easier to control -->
         <img
-          src="images/food/hero.jpg"
-          alt="A table set with plant-based dishes and drinks"
-          class="hero-image"
-        >
+        src="images/food/hero.jpg"
+        alt="A table set with plant-based dishes and drinks"
+        class="hero-image"
+        itemprop="image">
 
         <!-- call to action button -->
+         <!-- wrapping the button so I can center or space it easily without affecting other elements -->
         <div class="button-wrap">
           <a href="contact.html" class="primary-button book-button">Book A Table</a>
         </div>
@@ -75,9 +91,11 @@
     <!-- VALUES -->
     <section class="values-section">
       <div class="page-wrapper">
-        <h2 class="section-title">Our Values</h2>
+        <h2 class="section-title">· Our Values ·</h2>
 
        <!-- each article is basically one “card” -->
+        <!-- each value is its own article because it represents a complete idea/card.
+this makes the layout easier to manage and more semantic -->
         <article class="value-card">
           <img
             src="images/icons/leaf.svg"
@@ -113,9 +131,9 @@
     <!-- SPECIALS -->
     <section class="specials-section">
       <div class="page-wrapper">
-        <h2 class="section-title">Our Specials</h2>
+        <h2 class="section-title">· Our Specials ·</h2>
 
-       <!-- each item is structured the same so it looks consistent -->
+       <!-- each item is structured the same so it looks consistent and I can reuse the same CSS for all cards-->
         <article class="special-card">
           <h3 class="special-heading">Harvest Veggie Wrap</h3>
           <img
@@ -163,9 +181,9 @@
     </section>
     
     <!-- TESTIMONIALS -->
-    <section class="testimonials-section">
+    <section class="testimonials-section" aria-labelledby="testimonials-heading">
   <div class="page-wrapper">
-    <h2 class="section-title">Testimonials</h2>
+   <h2 class="section-title" id="testimonials-heading">· Testimonials ·</h2>
 
     <article class="testimonial-card">
       <div class="testimonial-top">
@@ -242,6 +260,7 @@
       <p class="footer-copy">©2026 Plant Palette</p>
 
       <!-- social icons -->
+       <!-- opening links in a new tab and using noopener for security reasons. aria-label helps screen readers understand what each icon does -->
       <div class="social-icons">
         <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
           <img src="images/icons/instagram.svg" alt="Instagram icon">
@@ -272,6 +291,7 @@
     mobileNav.classList.remove("show-menu");
   });
 </script>
+  </div>
 </body>
 </html>
 
