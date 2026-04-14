@@ -828,3 +828,63 @@ a {
   font-size: 1rem;
   line-height: 1.45;
 }
+
+/* CATEGORY */
+
+.category-section {
+  background-color: #f3f3f3;
+  padding: 2.5rem 0 1.5rem;
+}
+
+.category-title {
+  margin: 0 0 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.category-row {
+  background-color: var(--sage);
+  
+  /* Padding gives breathing room inside each row */
+  padding: 0.5rem 1rem;
+  
+  /* llarge bottom margin to create spadfcing between category rows */
+  margin-bottom: 7.5rem;
+  
+  /* Using flexbox to line up category items side by side */
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.category-item {
+  width: 42%;
+  
+  /* Centering text and image inside each category block */
+  text-align: center;
+}
+
+.category-name {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.category-image {
+  width: 105px;
+  height: 130px;
+  object-fit: cover;
+  
+  /* Centering image inside the category item */
+  margin: 0 auto;
+  
+  /* Pushing the image downward to create that overlapping visual effect */
+  transform: translateY(75px);
+}
+
+.menu-items-heading {
+  margin: 2rem 0 0;
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
