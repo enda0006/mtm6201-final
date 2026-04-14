@@ -596,3 +596,75 @@ a {
   display: block;
 }
 
+/* MENU PAGE */
+/* Defining all my main brand colours in one place so I can reuse them easily and keep consistency across the whole site */
+:root {
+  --cream: #f2e7cb;
+  --sage: #cfd4d1;
+  --muted-green: #93a29d;
+  --terracotta: #d56748;
+  --mustard: #efc757;
+  --text-dark: #1f1f1f;
+  --white: #ffffff;
+  --soft-yellow: #f4e2a8;
+}
+
+/* Resetting default spacing behaviour so padding and borders don’t break my layout */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Base styling for the whole page */
+body {
+  margin: 0;
+  
+  /* Using my imported font to keep the brand look consistent */
+  font-family: "Merienda", cursive;
+  font-weight: 400;
+  line-height: 1.4;
+  
+  /* Setting default text and background colours */
+  color: var(--text-dark);
+  background-color: var(--white);
+}
+
+/* Mking sure all images scale properly and dont overflow their containers */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Removing underline from links because I’m styling them manually elsewhere */
+a {
+  text-decoration: none;
+}
+
+/* Main wrapper that keeps content centered and prevents it from stretching too wide on large screens */
+.page-wrapper {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  
+  /* ading side padding so content doesnt touch scren edges on mobile */
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* skip link for accsibility so kkeyboard users can jump straight to main content */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 1rem;
+  
+  /* High contrast so it’s visible when focused */
+  background-color: var(--text-dark);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  z-index: 2000;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
