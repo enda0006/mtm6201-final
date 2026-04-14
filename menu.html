@@ -45,3 +45,41 @@
   <span class="menu-bar"></span>
   <span class="menu-bar"></span>
 </button>
+
+      <!-- tablet nav -->
+       <!-- tis section is specificaly for tablet/desktop navigation so users don’t need the hamburger menu -->
+      <div class="tablet-nav">
+          <!-- Each link takes the user to a different page on the site -->
+        <a class="tablet-nav-link" href="index.html">Home</a>
+        <a class="tablet-nav-link active" href="menu.html">Menu</a>
+        <a class="tablet-nav-link" href="contact.html">Contact Us</a>
+      </div>
+
+    </nav>
+
+    <!-- mobile menu -->
+     <!-- This is the menu that shows up when the hamburger button is clicked -->
+    <div class="mobile-nav-links" id="mobile-menu">
+      <!-- ths box hods the actual menu content so I can style it like a panel instead of full screen -->
+      <div class="mobile-menu-box">
+       <button class="close-menu" type="button" aria-label="Close navigation menu">✕</button>
+
+        <a class="mobile-nav-link" href="index.html">Home</a>
+        <a class="mobile-nav-link active" href="menu.html">Menu</a>
+        <a class="mobile-nav-link" href="contact.html">Contact Us</a>
+      </div>
+    </div>
+    
+    <!-- Hero text section with structured data for SEO (basically telling search engines this is a restaurant) -->
+     <div class="hero-text-wrap" itemscope itemtype="https://schema.org/Restaurant">
+      
+      <!-- Main title of the page -->
+  <h1 class="menu-title" itemprop="name">· Our Menu ·</h1>
+  <p class="menu-subtitle" itemprop="description">
+    Seasonal plant-based dishes made with locally sourced ingredients.
+  </p>
+</div>
+
+  </div>
+</header>
+
