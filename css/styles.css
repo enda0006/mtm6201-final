@@ -1189,3 +1189,296 @@ a {
   max-width: 290px;
   margin: 0 auto;
 }
+
+/* Tablet verstion */
+.tablet-nav {
+  display: none;
+}
+
+.tablet-nav-link {
+  color: var(--text-dark);
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.tablet-nav-link.active,
+.tablet-nav-link:hover {
+  color: var(--terracotta);
+}
+
+@media (min-width: 768px) {
+  /* inceasing side pading so conent has more breathing rooom on lager screens */
+  .page-wrapper {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  /* HEADER  */
+
+  /* Aigning navigation elements poperly for tablet layout */
+ .site-nav,
+.menu-top-nav,
+.contact-top-nav {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem 1.5rem 0;
+}
+
+.menu-button {
+  /* hiding hamburger menu on tablet since full nav is shown */
+  display: none;
+}
+
+.tablet-nav {
+  position: absolute;
+  left: 50%;
+  /* Centering navigation links in the header */
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.tablet-nav-link {
+  font-size: 1.05rem;
+}
+
+.logo-img {
+  width: 150px;
+  height: auto;
+}     
+
+  /* HOME PAGE */
+
+.hero-section {
+  padding-top: 1.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.hero-section .page-wrapper {
+  position: relative;
+  min-height: 620px;
+}
+
+.hero-title {
+  margin: 0 0 2rem;
+  text-align: center;
+  font-size: 4.25rem;
+  font-weight: 700;
+  line-height: 1.08;
+  max-width: 58rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-text {
+  position: absolute;
+  left: 1.5rem;
+  top: 20rem;
+  width: 24%;
+  max-width: 16rem;
+  font-size: 16px;
+  line-height: 1.35;
+  text-align: left;
+  transform: none;
+}
+
+.hero-image {
+  width: 20rem;
+  height: 32rem;
+  object-fit: cover;
+  border-radius: 1.75rem;
+  /* Rotating image for the stylized layout design */
+  transform: rotate(90deg) scale(1);
+  transform-origin: center;
+  margin: -4rem 12% 0 auto;
+  display: block;
+}
+
+.button-wrap {
+  width: 34rem;
+  margin-left: auto;
+  text-align: right;
+  margin: -5rem 0 0 auto;
+}
+
+.primary-button {
+  font-size: 0.9rem;
+  padding: 0.35rem 0.95rem;
+}
+
+/* VALUES */
+
+.values-section {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.section-title {
+  margin: 0 0 2.5rem;
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+
+.value-card {
+  max-width: 52rem;
+  margin: 0 auto 1.25rem;
+  padding: 2rem 1.5rem;
+  border-radius: 999px;
+}
+
+.value-card:last-child {
+  margin-bottom: 0;
+}
+
+.value-icon {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 0.85rem;
+}
+
+.value-heading {
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+
+.value-text {
+  font-size: 0.9rem;
+}
+
+/*  SPECIALS TABLET */
+
+.special-card {
+  position: relative;
+  min-height: 21rem;
+  margin-bottom: 1.75rem;
+  padding: 2rem 2rem 1.75rem;
+}
+
+.special-heading {
+  position: absolute;
+  left: 2rem;
+  top: 8.25rem;
+  width: 24%;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: left;
+}
+
+.special-image {
+  width: 14rem;
+  height: 18rem;
+  object-fit: cover;
+  /* Adjusting positioning so image sits nicely in tablet layout */
+  margin-left: auto;
+  border-radius: 1.5rem;
+  transform: rotate(90deg)  scale(1.3);
+  display: block;
+  margin: 0% 60% auto;
+}
+
+.special-text {
+  width: 82%;
+  margin: 1.5rem auto 0;
+  padding-right: 0;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.special-price {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  font-size: 0.72rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.specials-button-wrap {
+  width: 52%;         
+  margin-left: auto;   
+  margin-top: 1rem;
+  text-align: right;
+}
+
+/* TESTIMONIALS */
+
+.testimonials-section {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.testimonial-card {
+  max-width: 52rem;
+  margin: 0 auto 1.25rem;
+  padding: 1.25rem 1.25rem 1.35rem;
+  border-radius: 1.25rem;
+}
+
+.testimonial-card:last-child {
+  margin-bottom: 0;
+}
+
+.testimonial-top {
+  gap: 0.9rem;
+}
+
+.testimonial-image {
+  width: 64px;
+  height: 64px;
+}
+
+.testimonial-name {
+  font-size: 1rem;
+}
+
+.rating-pill {
+  font-size: 0.82rem;
+  padding: 0.3rem 0.65rem;
+}
+
+.testimonial-text {
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+/* FOOTER */
+
+.site-footer {
+  padding-top: 1.4rem;
+  padding-bottom: 1rem;
+}
+
+.footer-top {
+  align-items: center;
+}
+
+.footer-nav {
+  gap: 1.5rem;
+}
+
+.footer-link {
+  font-size: 1rem;
+}
+
+.footer-logo {
+  width: 155px;
+}
+
+.footer-bottom {
+  align-items: center;
+}
+
+.footer-copy {
+  font-size: 0.92rem;
+}
+}
