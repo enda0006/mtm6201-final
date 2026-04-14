@@ -1,11 +1,47 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Palette | Menu</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Linking my external CSS file so all my styling applies to this page -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
-</body>
-</html>
+<!-- skip link for accesibility so users can jump straight to main content without clicking through navigation -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- Header section with hero image and navigation -->
+  <header class="menu-header">
+    <!-- this overlay sits on top of the hero image to darken it slightly so text is easier to read -->
+  <div class="hero-overlay"></div>
+
+  <img src="images/food/heromenu.jpg" alt="Plant-based plated dish" class="menu-hero-image">
+<!-- wrapper for everything that sits on top of the hero image nav, text, etc. -->
+  <div class="menu-header-content">
+
+<!-- Navigation section -->
+    <nav class="menu-top-nav" aria-label="Main navigation">
+
+      <!-- logo -->
+       <!-- Clicking the logo brings the user back to the homepage -->
+      <a class="site-logo" href="index.html">
+        <img src="images/logo/logo.svg" alt="Plant Palette logo" class="logo-img">
+      </a>
+
+      <!-- hamburger -->
+     <button
+  class="menu-button"
+  type="button"
+  aria-label="Open navigation menu"
+  aria-expanded="false"
+  aria-controls="mobile-menu"
+>
+  <span class="menu-bar"></span>
+  <span class="menu-bar"></span>
+  <span class="menu-bar"></span>
+</button>
