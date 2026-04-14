@@ -668,3 +668,163 @@ a {
 .skip-link:focus {
   top: 1rem;
 }
+/* HERO HEADER */
+/* this whole setion control the herro ara at the top of the page image, overlay, nav, text */
+
+.menu-header {
+  position: relative;
+  min-height: 560px;
+  /* Preventing anything from spilling outside the hero area */
+  overflow: hidden;
+}
+
+.menu-hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  
+  /* Light overlay so text stays readable over the image */
+  background-color: rgba(255, 255, 255, 0.62);
+  
+  /* Placing it above the image but below the content */
+  z-index: 1;
+}
+
+.menu-header-content {
+  position: relative;
+  z-index: 2;
+  
+  /* Keepig content insde the hero spaced nicely */
+  min-height: 560px;
+  padding: 1rem 1rem 2rem;
+}
+
+.menu-top-nav {
+  display: flex;
+  
+  /* Spacing logo on one side and menu button on the other */
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo-img {
+  width: 120px;
+  height: auto;
+}
+
+.menu-button {
+  width: 42px;
+  height: 34px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  
+  /* Stacng the hamburger lines vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  
+  cursor: pointer;
+  /* Making sure it sits above other elements if needed */
+  z-index: 3;
+}
+
+.menu-bar {
+  width: 34px;
+  height: 3px;
+  margin-left: auto;
+  
+  /* Each line of the hamburger icon */
+  background-color: var(--text-dark);
+}
+
+.mobile-nav-links {
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  /* fullscreen overlay menu for mobile */
+  width: 100%;
+  height: 100%;
+  
+  /* Dark transparent background behind the menu box */
+  background-color: rgba(0, 0, 0, 0.25);
+  
+  /* Hidden by default until activated by JS */
+  display: none;
+  
+  align-items: center;
+  justify-content: center;
+  
+  z-index: 1000;
+}
+
+.mobile-nav-links.show-menu {
+  /* This class gets added by JavaScript to show the menu */
+  display: flex;
+}
+
+.mobile-menu-box {
+  background-color: white;
+  width: 80%;
+  max-width: 320px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  
+  /* Adding depth so it feels like a popup panel */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.close-menu {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  
+  /* mking the close button bigger so it's easy to tap on mobile */
+  font-size: 1.5rem;
+  
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-nav-link {
+  color: var(--text-dark);
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.mobile-nav-link.active,
+.mobile-nav-link:hover {
+  color: var(--terracotta);
+}
+
+.hero-text-wrap {
+  max-width: 320px;
+  margin: 8rem auto 0;
+  text-align: center;
+}
+
+.menu-title {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.menu-subtitle {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.45;
+}
