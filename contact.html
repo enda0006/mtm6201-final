@@ -144,3 +144,54 @@
                       </section>
                     </main>
 
+                    <!-- footer section -->
+                     <footer class="site-footer">
+                      <div class="page-wrapper">
+                        <!-- Top part of footer (nav links + logo) -->
+                         <div class="footer-top">
+                          <!-- Footer navigation so users can still move around the site from the bottom -->
+                           <nav class="footer-nav">
+                            <!-- Same page links repeated for easier navigation -->
+                             <a class="footer-link" href="index.html">Home</a>
+                             <a class="footer-link" href="menu.html">Menu</a>
+                             <a class="footer-link active" href="contact.html">Contact Us</a>
+                            </nav>
+                            <!-- Footer logo linking back to homepage for quick navigatio-->
+                             <a href="index.html" class="footer-logo-link">
+                              <img src="images/logo/logo.svg" alt="Plant Palette logo" class="footer-logo">
+                            </a>
+                          </div>
+                          
+                          <div class="footer-divider"></div>
+                          <!-- Bottom part of footer (copyright + social icons) -->
+                           <div class="footer-bottom">
+                            <p class="footer-copy">©2026 Plant Palette</p>
+                            <div class="social-icons">
+                              <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <img src="images/icons/instagram.svg" alt="Instagram icon">
+                              </a>
+                              <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                <img src="images/icons/facebook.svg" alt="Facebook icon">
+                              </a>
+                              <a href="https://www.snapchat.com/add/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Snapchat">
+                                <img src="images/icons/snapchat.svg" alt="Snapchat icon">
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                      <!-- JavaScript for mobile navigation toggle -->
+                       <script>
+                       const menuButton = document.querySelector(".menu-button");
+                       const mobileNav = document.querySelector(".mobile-nav-links");
+                       const closeButton = document.querySelector(".close-menu");
+                       menuButton.addEventListener("click", () => {
+                        mobileNav.classList.add("show-menu");
+                      });
+                      closeButton.addEventListener("click", () => {
+                        mobileNav.classList.remove("show-menu");
+                      });
+                      </script>
+                      </body>
+                      </html>
+
