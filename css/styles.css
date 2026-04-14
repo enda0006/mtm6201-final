@@ -1628,3 +1628,202 @@ a {
   }
 
 }
+/* DESKTOP VERSION */
+@media (min-width: 1024px) {
+
+  /* GLOBAL */
+  .page-wrapper {
+    width: min(1400px, 100%);
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  /* NAV */
+  .tablet-nav {
+    /* Increasing spacing between nav links for better readability */
+    gap: 2.5rem;
+  }
+
+  .tablet-nav-link {
+    font-size: 1.05rem;
+  }
+
+  /* Home page */
+  .hero-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero-title {
+    font-size: 3.6rem;
+  }
+
+  .hero-text {
+    font-size: 1.25rem;
+    
+    /* Alowing text to sit further in from the edgeon larger screens */
+    max-width: 18rem;
+    left: 4rem;
+  }
+
+  .hero-image {
+    /* ensuring image scales properly withoutbreaking layout */
+    max-width: 100%;
+  }
+
+  .primary-button {
+    font-size: 1rem;
+    padding: 0.7rem 1.8rem;
+  }
+
+  .section-title {
+    font-size: 2.1rem;
+    margin-bottom: 2.25rem;
+  }
+
+  /* VALUES */
+  .value-card {
+    padding: 2rem 1.75rem;
+  }
+
+  .value-heading {
+    font-size: 1.15rem;
+  }
+
+  .value-text {
+    font-size: 1rem;
+  }
+
+  /* SPECIALS */
+  .special-card {
+    min-height: 30rem;
+    padding: 2.5rem 1.75rem 2rem;
+  }
+
+  .special-heading {
+    font-size: 1.25rem;
+    left: 2.25rem;
+    top: 11.5rem;
+  }
+
+  .special-image {
+    width: 42%;
+    max-width: 15rem;
+    margin-right: 2rem;
+  }
+
+  .special-text {
+    font-size: 1rem;
+    width: 82%;
+    padding-right: 3.25rem;
+  }
+
+  .special-price {
+    width: 2.6rem;
+    height: 2.6rem;
+    font-size: 0.95rem;
+  }
+
+  /* TESTIMONIALS */
+  .testimonial-card {
+    padding: 1.5rem 1.5rem 1.75rem;
+  }
+
+  .testimonial-image {
+    width: 68px;
+    height: 68px;
+  }
+
+  .testimonial-name {
+    font-size: 1.05rem;
+  }
+
+  .testimonial-text {
+    font-size: 1rem;
+  }
+
+/* Menu page */
+  .menu-title {
+    font-size: 3rem;
+  }
+
+  .menu-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .category-name {
+    font-size: 1.2rem;
+  }
+
+  .menu-section-title {
+    font-size: 1.8rem;
+  }
+
+  .item-name {
+    font-size: 1.2rem;
+  }
+
+  .item-description {
+    font-size: 1rem;
+  }
+
+  .item-price {
+    font-size: 1.1rem;
+  }
+
+  /* contact page */
+  .contact-page-title {
+    font-size: 2.8rem;
+  }
+
+  .contact-form {
+    max-width: 650px;
+  }
+
+  .contact-input,
+  .contact-textarea {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  .send-button {
+    font-size: 1rem;
+    padding: 0.7rem 1.75rem;
+  }
+
+  .hours-title,
+  .directions-title {
+    font-size: 1.8rem;
+  }
+
+  .hours-text {
+    font-size: 1.05rem;
+  }
+
+  /* MAP (same style, just slightly bigger) */
+  .map-embed {
+    /* Expandingmap size for better visibilty on desktop */
+    max-width: 600px;
+    height: 450px;
+  }
+
+  .address-text {
+    font-size: 1.05rem;
+  }
+
+  /* FOOTER */
+  .footer-link,
+  .footer-copy {
+    font-size: 1rem;
+  }
+
+  .footer-logo {
+    width: 190px;
+  }
+
+  .social-icons img {
+    width: 26px;
+    height: 26px;
+  }
+
+}
