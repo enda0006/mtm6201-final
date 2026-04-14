@@ -72,8 +72,8 @@
     
     <!-- Hero text section with structured data for SEO (basically telling search engines this is a restaurant) -->
      <div class="hero-text-wrap" itemscope itemtype="https://schema.org/Restaurant">
-      
-      <!-- Main title of the page -->
+
+      <!-- Main Content  -->
   <h1 class="menu-title" itemprop="name">· Our Menu ·</h1>
   <p class="menu-subtitle" itemprop="description">
     Seasonal plant-based dishes made with locally sourced ingredients.
@@ -82,4 +82,41 @@
 
   </div>
 </header>
+
+  <!-- Adding role="main" and schema markup to improve accessibility and help search engines understand this is a menu -->
+  <main id="main-content" role="main" itemscope itemtype="https://schema.org/Menu">
+     <!-- Section for organizing the menu into categories -->
+    <section class="category-section">
+      <!-- Wrapper to keep everything aligned nicely and not too stretched on big screens -->
+      <div class="page-wrapper">
+        <h2 class="category-title">Category</h2>
+
+         <!-- First row of categories -->
+        <!-- Using rows so I can control layout better (like 2 items per row) -->
+        <div class="category-row">
+          <article class="category-item">
+            <h3 class="category-name">Starters</h3>
+            <img src="images/food/starter.jpg" alt="Starter dish" class="category-image">
+          </article>
+
+          <article class="category-item">
+            <h3 class="category-name">Mains</h3>
+            <img src="images/food/main.jpg" alt="Main dish" class="category-image">
+          </article>
+        </div>
+
+        <!-- secnd row of categores -->
+        <div class="category-row">
+          <article class="category-item">
+            <h3 class="category-name">Desserts</h3>
+            <img src="images/food/dessert.jpg" alt="Dessert dish" class="category-image">
+          </article>
+
+          <article class="category-item">
+            <h3 class="category-name">Drinks</h3>
+            <!-- keping alt text simple but desccxriptve so screen readers understand the image -->
+            <img src="images/food/drink.jpg" alt="Drink" class="category-image">
+          </article>
+        </div>
+
 
