@@ -888,3 +888,93 @@ a {
   font-size: 1.35rem;
   font-weight: 700;
 }
+
+/* MENU LISTS */
+
+.menu-list-section {
+  /* bcasic spacing around each menu block so sections dot feel stck together */
+  padding: 1rem 0 1.25rem;
+}
+
+.starters-section {
+  background-color: #f0dfaa;
+}
+
+.mains-section {
+  background-color: #cfd4d1;
+  
+  /* ading separation from the pevious section so each category feels distnct */
+  margin-top: 3.5rem;
+}
+
+.desserts-section {
+  background-color: var(--soft-yellow);
+  /* ssame spacing logic as mains so layout stays consistent */
+  margin-top: 3.5rem;
+  padding-bottom: 2rem;
+}
+
+.menu-section-title {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.starters-title {
+  color: var(--terracotta);
+}
+
+.mains-title {
+  color: var(--terracotta);
+}
+
+.desserts-title {
+  color: var(--terracotta);
+}
+
+.menu-item {
+  /* ysing flex so the text is on the left and price stays aligned on the right */
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+/* removing bottom spacing from last irtem so the section ends cleanly */
+.menu-item:last-child {
+  margin-bottom: 0;
+}
+
+.menu-item-text {
+  flex: 1;
+}
+
+.item-name {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.item-description {
+  margin: 0;
+  font-size: 0.7rem;
+  line-height: 1.35;
+}
+
+.item-price {
+  /* Prevents price circle from shrinking when space gets tight */
+  flex-shrink: 0;
+  min-width: 32px;
+  height: 32px;
+  /* Making the price look like a badge/circle */
+  border-radius: 50%;
+  background-color: rgba(147, 162, 157, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 700;
+  margin-top: 0.1rem;
+}
