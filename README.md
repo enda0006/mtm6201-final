@@ -1,4 +1,6 @@
 # mtm6201-final
+[Github link](https://enda0006.github.io/mtm6201-final/)
+
 [Prototype](https://www.figma.com/design/OnH5h7UyteTzViIJsrMecf/Untitled?node-id=3-728&t=Pv9co1BCPrZ7ApuQ-1)
 
 # Plant Palette – Web Portfolio
@@ -110,3 +112,4 @@ Overall this project helped me understand what it actually takes to build a full
 If I had to improve it I would probably work more on the responsiveness and maybe try using something like Bootstrap just to compare.
 
 But overall I feel way more confident now building websites and solving problems on my own which is probably the biggest takeaway.
+
