@@ -1529,69 +1529,63 @@ a {
 }
 
   /* CONTACT PAGE */
-  .contact-form-section {
-    /* iving more vertical space so eerything feels less cramped on larger screens */
-    padding-top: 1.5rem;
-    padding-bottom: 2rem;
-  }
 
-  .contact-page-title {
-    /* sightly increasing font sixe so it stands out more on ablet */
-    font-size: 2.2rem;
-    margin-bottom: 2rem;
-  }
+.contact-page-title {
+  font-size: 2.4rem;
+}
 
-  .contact-form {
-    /* Limiting width so the form doesn’t stretch too wide */
-    max-width: 42rem;
-    margin: 0 auto;
-  }
+.contact-form {
+  /* Keeing the form at a readable width so it doesnt stretch too wide */
+  max-width: 600px;
+  
+  /* Centering the form on the page */
+  margin: 0 auto;
+}
 
-  .contact-input {
-    /* aking inputs a bit taller forbetter usability */
-    height: 48px;
-  }
+.contact-input,
+.contact-textarea {
+  font-size: 0.95rem;
+  padding: 0.65rem;
+}
 
-  .contact-textarea {
-    min-height: 170px;
-  }
+.send-button {
+  /* Slightly adjusting button size so it feelsalanced with the larger form */
+  font-size: 0.95rem;
+  padding: 0.6rem 1.5rem;
+}
 
-  .send-button {
-    font-size: 1.05rem;
-    padding: 0.35rem 1.2rem;
-  }
+.hours-title,
+.directions-title {
+  font-size: 1.6rem;
+}
 
-  .hours-title {
-    font-size: 2.1rem;
-  }
+.hours-text {
+  font-size: 1rem;
+}
 
-  .hours-card {
-    max-width: 42rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2rem 1.5rem;
-  }
+/* MAp section  */
 
-  .hours-text {
-    font-size: 1.2rem;
-  }
+.map-section .page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .directions-title {
-    max-width: 42rem;
-    margin: 0 auto;
-    font-size: 1.9rem;
-  }
+.address-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
 
-  .address-text {
-    font-size: 1.3rem;
-  }
-
-  .map-image,
-  .map-embed {
-    /* Maing the map larger but still controlled so it doesn’t overflow */
-    max-width: 420px;
-    height: auto;
-  }
+.map-embed {
+  /* Scaling map to be larger on tablet but still contained */
+  width: 100%;
+  max-width: 500px;  
+  height: 400px;     
+  
+  /* Rounding corners to match the rest of the design style */
+  border-radius: 1rem;
+}
 
   /* FOOTER */
 
