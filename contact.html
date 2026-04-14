@@ -65,3 +65,82 @@
   </div>
 
 </header>
+
+<!-- Main section -->
+ <!-- Adding schema markup again so search engines understand this is a restaurant -->
+  <main id="main-content" role="main" itemscope itemtype="https://schema.org/Restaurant">
+    <!-- Contact form section -->
+    <section class="contact-form-section">
+      <div class="page-wrapper">
+        <h1 class="contact-page-title">
+          <!-- Using itemprop name (even though it’s empty here) to connect with schema -->
+           <span itemprop="name"></span> · Contact Us ·
+          </h1>
+          <!-- Contact form where users can send a message -->
+
+          <!-- aria-label helps screen readers understand what this form is for -->
+           <form class="contact-form" aria-label="Contact form">
+
+            <label class="contact-label" for="first-name">First Name</label>
+            <input class="contact-input" type="text" id="first-name" name="first-name">
+            <!-- Label is connected to input using "for" and "id" so it’s accessible -->
+             <label class="contact-label" for="last-name">Last Name</label>
+             <input class="contact-input" type="text" id="last-name" name="last-name">
+             <!-- Email input -->
+              <!-- Using type="email" so the browser can validate it automatically -->
+               <label class="contact-label" for="email">Email</label>
+               <input class="contact-input" type="email" id="email" name="email">
+               <!-- Message textarea -->
+                <!-- Using textarea instead of input so users can type longer messages -->
+                 <label class="contact-label" for="message">Message</label>
+                 <textarea class="contact-textarea" id="message" name="message"></textarea>
+                 <!-- Submit button to send the form -->
+                  <div class="contact-button-wrap">
+                    <button class="send-button" type="submit">Send</button>
+                  </div>
+                </form>
+              </div>
+            </section>
+            
+            <!-- Hours and location section -->
+             <section class="hours-section">
+              <div class="page-wrapper">
+                <!-- Section title -->
+                 <h2 class="hours-title">· Hours &amp; Location ·</h2>
+                 <!-- Card-style container for business hours -->
+                  <div class="hours-card">
+                    <!-- Displaying opening hours -->
+                     <!-- Using itemprop to make this structured data for SEO -->
+                      <p class="hours-text">
+                        <span itemprop="openingHours" content="Mo-Th 11:00-21:00">Mon-Thu: 11am-9pm</span><br>
+                        <span itemprop="openingHours" content="Fr-Sa 11:00-22:00">Fri-Sat: 11am-10pm</span><br>
+                        <span itemprop="openingHours" content="Su 10:00-20:00">Sun: 10am-8pm</span>
+                      </p>
+                    </div>
+                    <!-- Directions title to introduce the map section -->
+                     <h2 class="directions-title">Directions</h2>
+                    </div>
+                  </section>
+                  <!-- Map + address section -->
+                   <section class="map-section">
+                    <div class="page-wrapper">
+                      <!-- Address info using semantic <address> tag -->
+                        <!-- Adding schema properties again so search engines understand the location -->
+                         <address class="address-text" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                          <span itemprop="streetAddress">123 Green Street</span>
+                          <span itemprop="addressLocality">Ottawa</span>,
+                          <span itemprop="addressRegion">ON</span>
+                        </address>
+                        <!-- Embedded Google map -->
+                        <!-- This lets users visually see the location instead of just reading the address -->
+                         <iframe
+                         class="map-embed"
+                         src="https://www.google.com/maps?q=Algonquin+College+Ottawa&output=embed
+                         loading="lazy"
+                         referrerpolicy="no-referrer-when-downgrade"
+                         title="Map showing Plant Palette location"
+                         ></iframe>
+                        </div>
+                      </section>
+                    </main>
+
