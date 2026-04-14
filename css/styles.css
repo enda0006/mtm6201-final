@@ -1481,70 +1481,56 @@ a {
 .footer-copy {
   font-size: 0.92rem;
 }
-  /* MENU PAGE */
-  .menu-header {
-    min-height: 430px;
-  }
+/* Menu page */
 
-  .menu-header-content {
-    min-height: 430px;
-    padding: 1rem 1.5rem 2rem;
-  }
+.menu-title {
+  font-size: 2.5rem;
+}
 
-  .hero-text-wrap {
-    max-width: 34rem;
-    margin: 6rem auto 0;
-  }
+.menu-subtitle {
+  font-size: 1.1rem;
+}
+.category-row {
+  display: flex;
+  gap: 1.5rem;
+}
 
-  .menu-title {
-    font-size: 2.6rem;
-  }
+.category-item {
+  /* Allowing each category item to take equal space in the row */
+  flex: 1;
+}
 
-  .menu-subtitle {
-    font-size: 1.1rem;
-  }
+.category-name {
+  font-size: 1.1rem;
+}
 
-  .category-row {
-    padding: 0.75rem 1.5rem;
-  }
+.category-image {
+  /* Sight rounding to make images feel softer and more modern */
+  border-radius: 1.5rem;
+}
 
-  .category-item {
-    width: 38%;
-  }
+/* menu items spacing */
+.menu-item {
+  /* Adding spacing so eachmenu item feels separated and easir to scan */
+  padding: 1rem 0;
+}
 
-  .category-image {
-    width: 130px;
-    height: 160px;
-    transform: translateY(65px);
-  }
+.item-name {
+  font-size: 1.1rem;
+}
 
-  .menu-list-section .page-wrapper {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
+.item-description {
+  font-size: 0.95rem;
+}
 
-  .menu-section-title {
-    font-size: 1.75rem;
-  }
-
-  .item-name {
-    font-size: 1.2rem;
-  }
-
-  .item-description {
-    font-size: 0.82rem;
-    max-width: 80%;
-  }
-
-  .item-price {
-    min-width: 36px;
-    height: 36px;
-    font-size: 0.7rem;
-  }
+.item-price {
+  /* Mking price slightly bigger so it stands outmore on talet */
+  font-size: 1rem;
+}
 
   /* CONTACT PAGE */
   .contact-form-section {
-    /* Giving more vertical space so everything feels less cramped on larger screens */
+    /* iving more vertical space so eerything feels less cramped on larger screens */
     padding-top: 1.5rem;
     padding-bottom: 2rem;
   }
@@ -1583,7 +1569,6 @@ a {
     max-width: 42rem;
     margin-left: auto;
     margin-right: auto;
-    /* More padding to match the larger screen spacing */
     padding: 2rem 1.5rem;
   }
 
@@ -1592,7 +1577,6 @@ a {
   }
 
   .directions-title {
-    /* Alining with the same width as the hours card for consstency */
     max-width: 42rem;
     margin: 0 auto;
     font-size: 1.9rem;
@@ -1604,7 +1588,7 @@ a {
 
   .map-image,
   .map-embed {
-    /* Making the map larger but still controlled so it doesn’t overflow */
+    /* Maing the map larger but still controlled so it doesn’t overflow */
     max-width: 420px;
     height: auto;
   }
