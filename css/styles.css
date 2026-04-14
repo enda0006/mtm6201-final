@@ -1542,4 +1542,111 @@ a {
     font-size: 0.7rem;
   }
 
+  /* CONTACT PAGE */
+  .contact-form-section {
+    /* Giving more vertical space so everything feels less cramped on larger screens */
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .contact-page-title {
+    /* sightly increasing font sixe so it stands out more on ablet */
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-form {
+    /* Limiting width so the form doesn’t stretch too wide */
+    max-width: 42rem;
+    margin: 0 auto;
+  }
+
+  .contact-input {
+    /* aking inputs a bit taller forbetter usability */
+    height: 48px;
+  }
+
+  .contact-textarea {
+    min-height: 170px;
+  }
+
+  .send-button {
+    font-size: 1.05rem;
+    padding: 0.35rem 1.2rem;
+  }
+
+  .hours-title {
+    font-size: 2.1rem;
+  }
+
+  .hours-card {
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+    /* More padding to match the larger screen spacing */
+    padding: 2rem 1.5rem;
+  }
+
+  .hours-text {
+    font-size: 1.2rem;
+  }
+
+  .directions-title {
+    /* Alining with the same width as the hours card for consstency */
+    max-width: 42rem;
+    margin: 0 auto;
+    font-size: 1.9rem;
+  }
+
+  .address-text {
+    font-size: 1.3rem;
+  }
+
+  .map-image,
+  .map-embed {
+    /* Making the map larger but still controlled so it doesn’t overflow */
+    max-width: 420px;
+    height: auto;
+  }
+
+  /* FOOTER */
+
+  .footer-top {
+    align-items: center;
+  }
+
+  .footer-link {
+    font-size: 1rem;
+  }
+
+  .footer-logo {
+    width: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  /* GLOBAL WRAPPER */
+  /* Increasing padding even more for larger tablet layouts */
+  .page-wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* NAV */
+  .menu-button {
+    /* Making sure hamburger menu stays hidden on tablet */
+    display: none;
+  }
+
+  .tablet-nav {
+    /* Showing tablet navigation again here just to reinforce layout */
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .tablet-nav-link {
+    font-size: 0.95rem;
+  }
+
 }
